@@ -5,3 +5,5 @@
 
  - Videos
  - photos
+ - PDF's
+ - CSV's
