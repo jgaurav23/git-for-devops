@@ -1,102 +1,106 @@
-Git and Linux Command History Explained
 
-Directory & File Operations
-mkdir git-for-devops
-Create a new directory named git-for-devops.
+# Git and Linux Command History Explained
 
-ls
-List files and directories in the current path.
+## Directory & File Operations
 
-cd git-for-devops/
-Navigate into the git-for-devops directory.
+- **mkdir git-for-devops**  
+  Create a new directory named `git-for-devops`.
 
-pwd
-Print the full path of the current working directory.
+- **ls**  
+  List files and directories in the current path.
 
-vim hello.txt
-Create or open hello.txt using the Vim text editor.
+- **cd git-for-devops/**  
+  Navigate into the `git-for-devops` directory.
 
-touch one.txt
-Create an empty file named one.txt.
+- **pwd**  
+  Print the full path of the current working directory.
 
-touch two.txt
-Create another empty file named two.txt.
+- **vim hello.txt**  
+  Create or open `hello.txt` using the Vim text editor.
 
-touch three.txt
-Create a third file named three.txt.
+- **touch one.txt**  
+  Create an empty file named `one.txt`.
 
-rm hello.txt
-Delete the file hello.txt.
+- **touch two.txt**  
+  Create another empty file named `two.txt`.
 
-Git Repository Setup & Status
-git init
-Initialize a new Git repository in the current directory.
+- **touch three.txt**  
+  Create a third file named `three.txt`.
 
-git status
-Show the current state of the working directory and staging area.
+- **rm hello.txt**  
+  Delete the file `hello.txt`.
 
-git add .
-Stage all changes (new, modified, deleted files) for commit.
+## Git Repository Setup & Status
 
-git add one.txt
-Stage the modified one.txt file for commit.
+- **git init**  
+  Initialize a new Git repository in the current directory.
 
-git add three.txt
-Stage the newly created three.txt file.
+- **git status**  
+  Show the current state of the working directory and staging area.
 
-git commit -m "commit message"
-Commit staged changes with a custom message.
+- **git add .**  
+  Stage all changes (new, modified, deleted files) for commit.
 
-git log
-View the commit history.
+- **git add one.txt**  
+  Stage the modified `one.txt` file for commit.
 
-Git Branching
-git branch
-List all branches in the repository.
+- **git add three.txt**  
+  Stage the newly created `three.txt` file.
 
-git checkout -b dev
-Create and switch to a new branch named dev.
+- **git commit -m "commit message"**  
+  Commit staged changes with a custom message.
 
-git checkout master
-Switch back to the master branch.
+- **git log**  
+  View the commit history.
 
-File Listings (Various Formats)
-ls -lart
-Long list format including hidden files, sorted by time in reverse.
+## Git Branching
 
-ls -lat
-Long list sorted by modification time.
+- **git branch**  
+  List all branches in the repository.
 
-ls -lar
-Long list in reverse order with all files.
+- **git checkout -b dev**  
+  Create and switch to a new branch named `dev`.
 
-ls -r
-Recursive listing of files and directories.
+- **git checkout master**  
+  Switch back to the `master` branch.
 
-ls -t
-Sort files by modification time.
+## File Listings (Various Formats)
 
-ls -rt
-Sort files by modification time in reverse.
+- **ls -lart**  
+  Long list format including hidden files, sorted by time in reverse.
 
-ls -lrt
-Long listing sorted by modification time in reverse.
+- **ls -lat**  
+  Long list sorted by modification time.
 
-Miscellaneous
-date
-Show the current system date and time.
+- **ls -lar**  
+  Long list in reverse order with all files.
 
-exit
-Exit the current shell session.
+- **ls -r**  
+  Recursive listing of files and directories.
 
-history
-Show the list of previously executed commands.
+- **ls -t**  
+  Sort files by modification time.
 
-Mistyped Commands (Corrected for Reference)
-gitlog → Should be git log
+- **ls -rt**  
+  Sort files by modification time in reverse.
 
-git sttus → Should be git status
+- **ls -lrt**  
+  Long listing sorted by modification time in reverse.
 
-git -b checkout dev → Should be git checkout -b dev
+## Miscellaneous
 
-git stats → Should be git status
+- **date**  
+  Show the current system date and time.
+
+- **exit**  
+  Exit the current shell session.
+
+- **history**  
+  Show the list of previously executed commands.
+
+## Mistyped Commands (Corrected for Reference)
+
+- **gitlog** → Should be `git log`  
+- **git sttus** → Should be `git status`  
+- **git -b checkout dev** → Should be `git checkout -b dev`  
+- **git stats** → Should be `git status`
