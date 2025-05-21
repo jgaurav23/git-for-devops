@@ -1,202 +1,102 @@
-#Git Commands
+Git and Linux Command History Explained
 
+Directory & File Operations
 mkdir git-for-devops
-Creates a new directory named git-for-devops.
+Create a new directory named git-for-devops.
 
 ls
-Lists the contents of the current directory.
+List files and directories in the current path.
 
 cd git-for-devops/
-Changes directory into git-for-devops.
+Navigate into the git-for-devops directory.
 
 pwd
-Prints the current working directory path.
+Print the full path of the current working directory.
 
 vim hello.txt
-Opens or creates a file called hello.txt in the vim text editor.
-
-ls
-Again, lists the contents of the current directory.
-
-git init
-Initializes a new Git repository in the current directory.
-
-ls -lart
-Lists all files, including hidden ones, with details, in reverse time order.
-
-git status
-Shows the current state of the working directory and staging area.
-
-exit
-Exits the terminal or shell session.
-
-ls
-Lists contents (likely run after logging back in or opening terminal again).
-
-cd git-for-devops/
-Navigates again into the git-for-devops directory.
-
-ls
-Lists contents of the directory.
-
-pwd
-Prints the full path of the current working directory.
-
-ls -lart
-Detailed list again, reversed by time.
+Create or open hello.txt using the Vim text editor.
 
 touch one.txt
-Creates an empty file named one.txt.
-
-ls -lart
-Lists files with details again to see the newly created file.
+Create an empty file named one.txt.
 
 touch two.txt
-Creates another empty file named two.txt.
-
-ls -lat
-Lists files with details, sorted by modification time.
-
-ls -lar
-Lists all files in reverse order including hidden ones.
-
-git status
-Shows which files are untracked, staged, or modified.
-
-rm hello.txt
-Deletes hello.txt.
-
-ls
-Checks if the file was deleted successfully.
-
-git status
-Shows that hello.txt was deleted and new files are untracked.
-
-git add .
-Stages all changes (new, modified, deleted files) for commit.
-
-git status
-Shows the staged changes.
-
-git commit -m "it is initial commit"
-Commits the staged changes with a message.
-
-git log
-Shows the commit history.
-
-ls
-Lists current files.
-
-vim one.txt
-Opens one.txt in vim to edit it.
-
-git status
-Shows that one.txt has been modified.
-
-git add one.txt
-Stages the modified one.txt file.
-
-git status
-Confirms that one.txt is staged for commit.
-
-git commit -m "changes in one.txt"
-Commits the changes to one.txt with a message.
-
-gitlog
-(Typo) Should be git log.
-
-git log
-Shows the commit history.
-
-exit
-Exits the shell.
-
-cd git-for-devops/
-Re-enters the working directory.
-
-ls
-Lists files again.
-
-git status
-Checks for any new changes.
-
-git log
-Views commit history again.
-
-git branch
-Lists all branches in the repo.
-
-git sttus
-(Typo) Should be git status.
-
-git status
-Shows status correctly.
-
-git branch
-Shows current and other branches again.
-
-git -b checkout dev
-(Incorrect command) The correct one follows.
-
-git checkout -b dev
-Creates and switches to a new branch called dev.
-
-git branch
-Confirms that you're now on the dev branch.
-
-ls
-Lists files again.
+Create another empty file named two.txt.
 
 touch three.txt
-Creates a file named three.txt.
+Create a third file named three.txt.
+
+rm hello.txt
+Delete the file hello.txt.
+
+Git Repository Setup & Status
+git init
+Initialize a new Git repository in the current directory.
 
 git status
-Shows that three.txt is untracked.
+Show the current state of the working directory and staging area.
+
+git add .
+Stage all changes (new, modified, deleted files) for commit.
+
+git add one.txt
+Stage the modified one.txt file for commit.
 
 git add three.txt
-Stages the new file.
+Stage the newly created three.txt file.
 
-git status
-Confirms that three.txt is staged.
+git commit -m "commit message"
+Commit staged changes with a custom message.
 
-git commit -m "three.txt added"
-Commits the new file to the dev branch.
+git log
+View the commit history.
 
-git stats
-(Typo) Should be git status.
+Git Branching
+git branch
+List all branches in the repository.
 
-git status
-Shows a clean working directory after commit.
-
-ls
-Lists current files.
-
-ls -r
-Lists files recursively in subdirectories.
-
-ls -t
-Lists files sorted by modification time.
-
-ls -lar
-Detailed list, all files, reverse order.
-
-date
-Displays the current date and time.
-
-ls -rt
-Lists files sorted by time in reverse order.
-
-ls -lrt
-Detailed listing sorted by time, reverse.
+git checkout -b dev
+Create and switch to a new branch named dev.
 
 git checkout master
-Switches back to the master branch.
+Switch back to the master branch.
 
-ls
-Lists files.
+File Listings (Various Formats)
+ls -lart
+Long list format including hidden files, sorted by time in reverse.
+
+ls -lat
+Long list sorted by modification time.
+
+ls -lar
+Long list in reverse order with all files.
+
+ls -r
+Recursive listing of files and directories.
+
+ls -t
+Sort files by modification time.
+
+ls -rt
+Sort files by modification time in reverse.
+
+ls -lrt
+Long listing sorted by modification time in reverse.
+
+Miscellaneous
+date
+Show the current system date and time.
 
 exit
-Exits terminal session.
+Exit the current shell session.
 
 history
-Displays the list of previously used commands.
+Show the list of previously executed commands.
+
+Mistyped Commands (Corrected for Reference)
+gitlog → Should be git log
+
+git sttus → Should be git status
+
+git -b checkout dev → Should be git checkout -b dev
+
+git stats → Should be git status
