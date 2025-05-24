@@ -1,3 +1,0 @@
- ths is two.txt
-
-pass=1234567890
